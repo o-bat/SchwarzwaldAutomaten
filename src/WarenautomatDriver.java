@@ -35,7 +35,6 @@ public class WarenautomatDriver {
             System.out.println();
             for (int i = 0; i < artikel.length; i++) {
                 if (artikel[i] == null) {
-                    break;
 
                 } else {
 
@@ -43,7 +42,7 @@ public class WarenautomatDriver {
 
                     int currentLength = artikel[i].length();
 
-                    if (currentLength > maxLength) {
+                    if (currentLength >= maxLength) {
                         maxLength = currentLength;
                     }
 
@@ -174,7 +173,6 @@ public class WarenautomatDriver {
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
                                 if (artikel[i] == null) {
-                                    break;
 
                                 } else {
 
@@ -208,7 +206,6 @@ public class WarenautomatDriver {
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
                                 if (artikel[i] == null) {
-                                    break;
 
                                 } else {
 
@@ -232,22 +229,13 @@ public class WarenautomatDriver {
                                 }
 
                             }
-                            System.out.println("Willst du Vorgang wiederholen (ja/nein)");
 
-                            String input = scan.next();
-
-                            if ("ja".equalsIgnoreCase(input)) {
-                                break; // Restart the program
-                            } else {
-                                System.out.println("Auf Wiedersehen!");
-                            }
                             break;
                         case 3:
                             System.err.println("Ware löschen");
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
                                 if (artikel[i] == null) {
-                                    break;
 
                                 } else {
 
@@ -281,7 +269,6 @@ public class WarenautomatDriver {
 
                             for (int i = 0; i < artikel.length; i++) {
                                 if (artikel[i] == null) {
-                                    break;
 
                                 } else {
 
@@ -304,16 +291,6 @@ public class WarenautomatDriver {
 
                                 }
 
-                            }
-
-                            System.out.println("Willst du Vorgang wiederholen (ja/nein)");
-
-                            input = scan.next();
-
-                            if ("ja".equalsIgnoreCase(input)) {
-                                break; // Restart the program
-                            } else {
-                                System.out.println("Auf Wiedersehen!");
                             }
                             break;
                         case 4:
