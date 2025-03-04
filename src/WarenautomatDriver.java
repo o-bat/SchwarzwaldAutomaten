@@ -39,7 +39,6 @@ public class WarenautomatDriver {
                 } else {
 
                     int maxLength = artikel[4].length();
-
                     int currentLength = artikel[i].length();
 
                     if (currentLength >= maxLength) {
@@ -753,16 +752,15 @@ public class WarenautomatDriver {
                             break; // Restart the program
                         } else {
                             System.out.println("Auf Wiedersehen!");
+                            scan.close();
+                            return;
                         }
-
                     }
                     break;
-
                 default:
                     System.out.println("Ungültige Artikel Nummer");
                     break;
             }
         }
-
     }
 }
