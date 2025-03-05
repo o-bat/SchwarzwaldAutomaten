@@ -1,0 +1,63 @@
+{
+  "name": "Spotube",
+  "iconURL": "https://content-download-egs.distro.on.epicgames.com/.well-known/EG-Shield-2023-Black-dual-tone-expanded.png",
+  "website": "https://epicgames.com",
+  "identifier": "com.epicgames.altstore",
+  "tintColor": "#818181",
+  "featuredApps": [
+    "com.epicgames.FortniteGame"
+
+  ],
+  "apps": [
+    {
+      "name": "Spotube",
+      "bundleIdentifier": "com.epicgames.FortniteGame",
+      "developerName": "Epic Games Sweden AB",
+      "subtitle": "",
+      "localizedDescription": "The future of Fortnite is here. Be the last player standing in Battle Royale and Zero Build, explore and survive in LEGO Fortnite, blast to the finish with Rocket Racing or headline a concert with Fortnite Festival. Play thousands of free creator made islands with friends including deathruns, tycoons, racing, zombie survival and more! Join the creator community and build your own island with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools. Each Fortnite island has an individual age rating so you can find the one that's right for you and your friends. Find it all in Fortnite! Fortnite requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
+      "_localizedDescriptions": {
+        "en": "The future of Fortnite is here. Be the last player standing in Battle Royale and Zero Build, explore and survive in LEGO Fortnite, blast to the finish with Rocket Racing or headline a concert with Fortnite Festival. Play thousands of free creator made islands with friends including deathruns, tycoons, racing, zombie survival and more! Join the creator community and build your own island with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools. Each Fortnite island has an individual age rating so you can find the one that's right for you and your friends. Find it all in Fortnite! Fortnite requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM."
+      },
+      "iconURL": "https://cdn1.epicgames.com/item/fn/FN_Logo_512x512_1024x1024-0a19a924e7f61249ab0c76569abfdc31",
+      "tintColor": "#818181",
+      "category": "games",
+      "screenshots": [
+        {
+          "imageURL": "https://cdn1.epicgames.com/item/fn/FNBR_CH5S4_Logo_2688x1440_2688x1440-5ddfe90e9330b9c6406d8413f0f74623",
+          "width": 2688,
+          "height": 1440
+        },
+        {
+          "imageURL": "https://cdn1.epicgames.com/item/fn/FNJN_BattleBus_KeyArt_DiscoveryTile_2688x1440_2688x1440-19f8d06c96c372915d4494020f42e6e7",
+          "width": 2688,
+          "height": 1440
+        },
+        {
+          "imageURL": "https://cdn1.epicgames.com/item/fn/FNSP_05_MobileScreen_2688x1440_2688x1440-ccb8f89255a077ba448debc17aa6c500",
+          "width": 2688,
+          "height": 1440
+        },
+        {
+          "imageURL": "https://cdn1.epicgames.com/item/fn/RR_Inferno_Island_Key_Art_RR_2688x1440_2688x1440-22ff07c036e235f49f69dd92d933beba",
+          "width": 2688,
+          "height": 1440
+        }
+      ],
+      "beta": false,
+      "versions": [
+        {
+          "version": "34.00.2",
+          "date": "2025-02-28T00:00:00.0000000Z",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/KRTirtho/Spotube/releases/latest/download/Spotube-iOS.ipa",
+          "size": 446267748,
+          "minOSVersion": "17.6",
+          "buildVersion": "40244943.2.4"
+        }
+      ],
+      "marketplaceID": "6483539426"
+    }
+    
+  ],
+  "news": []
+}
