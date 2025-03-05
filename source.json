@@ -7,9 +7,7 @@
     "website": "https://example.com",
     "tintColor": "#4185A9",
     "featuredApps": [
-        "com.example.myapp",
-        "com.example.anotherapp"
-    ],
+        "com.example.spotube"    ],
     "apps": [
         {
             "name": "spotube",
