@@ -52,8 +52,6 @@ public class WarenautomatDriver {
 
                     }
 
-                    System.out.println("| " + artikel[i] + " | " + preis[i] + " | " + (i + 1) + " |");
-
                 }
 
             }
@@ -140,7 +138,7 @@ public class WarenautomatDriver {
                                 preis[lager] = scan.nextDouble();
                                 System.out.println("Artikel erfolgreich hinzugefügt");
 
-                                for (int i = 0; i < lager + 1; i++) {
+                                for (int i = 0; i < artikel.length + 1; i++) {
                                     if (artikel[i] == null) {
 
                                     } else {
@@ -160,9 +158,9 @@ public class WarenautomatDriver {
 
                                         }
 
-                                        System.out.println("| " + artikel[i] + " | " + preis[i] + " | " + i + " | ");
-
                                     }
+
+                                    System.out.println("| " + artikel[i] + " | " + preis[i] + " | " + i + " | ");
 
                                 }
                             }
