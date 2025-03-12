@@ -33,16 +33,16 @@ public class WarenautomatDriver {
             System.out.println("Welcome to SchawarzwaldAutomaten");
             System.out.println("Für Wartungsmodus bitte 0 eingeben");
             System.out.println();
+
             for (int i = 0; i < artikel.length; i++) {
-                if (artikel[i] == null) {
-
-                } else {
-
+                if (artikel[i] != null) {
                     int maxLength = artikel[4].length();
                     int currentLength = artikel[i].length();
 
-                    if (currentLength >= maxLength) {
+                    if (currentLength > maxLength) {
                         maxLength = currentLength;
+                        i = 0;
+                        break;
                     }
 
                     int diff = maxLength - artikel[i].length();
@@ -51,6 +51,8 @@ public class WarenautomatDriver {
                         artikel[i] += " ";
 
                     }
+
+                    System.out.println("| " + artikel[i] + " | " + preis[i] + " | " + i + " |");
 
                 }
 
@@ -80,17 +82,14 @@ public class WarenautomatDriver {
                             System.err.println("Ware austascuhen / einfügen");
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
-                                if (artikel[i] == null) {
-                                    break;
-
-                                } else {
-
+                                if (artikel[i] != null) {
                                     int maxLength = artikel[4].length();
-
                                     int currentLength = artikel[i].length();
 
                                     if (currentLength > maxLength) {
                                         maxLength = currentLength;
+                                        i = 0;
+                                        break;
                                     }
 
                                     int diff = maxLength - artikel[i].length();
@@ -138,17 +137,15 @@ public class WarenautomatDriver {
                                 preis[lager] = scan.nextDouble();
                                 System.out.println("Artikel erfolgreich hinzugefügt");
 
-                                for (int i = 0; i < artikel.length + 1; i++) {
-                                    if (artikel[i] == null) {
-
-                                    } else {
-
+                                for (int i = 0; i < artikel.length; i++) {
+                                    if (artikel[i] != null) {
                                         int maxLength = artikel[4].length();
-
                                         int currentLength = artikel[i].length();
 
                                         if (currentLength > maxLength) {
                                             maxLength = currentLength;
+                                            i = 0;
+                                            break;
                                         }
 
                                         int diff = maxLength - artikel[i].length();
@@ -158,9 +155,9 @@ public class WarenautomatDriver {
 
                                         }
 
-                                    }
+                                        System.out.println("| " + artikel[i] + " | " + preis[i] + " | " + i + " |");
 
-                                    System.out.println("| " + artikel[i] + " | " + preis[i] + " | " + i + " | ");
+                                    }
 
                                 }
                             }
@@ -169,16 +166,14 @@ public class WarenautomatDriver {
                             System.err.println("Preise ändern");
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
-                                if (artikel[i] == null) {
-
-                                } else {
-
+                                if (artikel[i] != null) {
                                     int maxLength = artikel[4].length();
-
                                     int currentLength = artikel[i].length();
 
                                     if (currentLength > maxLength) {
                                         maxLength = currentLength;
+                                        i = 0;
+                                        break;
                                     }
 
                                     int diff = maxLength - artikel[i].length();
@@ -202,16 +197,14 @@ public class WarenautomatDriver {
                             System.out.println("Preis erfolgreich geändert");
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
-                                if (artikel[i] == null) {
-
-                                } else {
-
+                                if (artikel[i] != null) {
                                     int maxLength = artikel[4].length();
-
                                     int currentLength = artikel[i].length();
 
                                     if (currentLength > maxLength) {
                                         maxLength = currentLength;
+                                        i = 0;
+                                        break;
                                     }
 
                                     int diff = maxLength - artikel[i].length();
@@ -232,16 +225,14 @@ public class WarenautomatDriver {
                             System.err.println("Ware löschen");
                             System.out.println();
                             for (int i = 0; i < artikel.length; i++) {
-                                if (artikel[i] == null) {
-
-                                } else {
-
+                                if (artikel[i] != null) {
                                     int maxLength = artikel[4].length();
-
                                     int currentLength = artikel[i].length();
 
                                     if (currentLength > maxLength) {
                                         maxLength = currentLength;
+                                        i = 0;
+                                        break;
                                     }
 
                                     int diff = maxLength - artikel[i].length();
@@ -265,16 +256,14 @@ public class WarenautomatDriver {
                             System.out.println();
 
                             for (int i = 0; i < artikel.length; i++) {
-                                if (artikel[i] == null) {
-
-                                } else {
-
+                                if (artikel[i] != null) {
                                     int maxLength = artikel[4].length();
-
                                     int currentLength = artikel[i].length();
 
                                     if (currentLength > maxLength) {
                                         maxLength = currentLength;
+                                        i = 0;
+                                        break;
                                     }
 
                                     int diff = maxLength - artikel[i].length();
@@ -296,7 +285,6 @@ public class WarenautomatDriver {
 
                         default:
                             System.out.println("Fehler: Ungültige Wartungsmodus Nummer");
-
                             break;
                     }
 
@@ -756,6 +744,7 @@ public class WarenautomatDriver {
                     }
                     break;
                 default:
+
                     System.out.println("Ungültige Artikel Nummer");
                     break;
             }
