@@ -171,7 +171,7 @@ public class WarenautomatDriver {
                                 );
 
                                 // Find maximum item name length for proper formatting
-                                int maxNameLength = 20; // Default minimum width
+                                int maxNameLength = 22; // Default minimum width
                                 for (int i = 0; i < artikel.length; i++) {
                                     if (
                                         artikel[i] != null &&
@@ -189,14 +189,14 @@ public class WarenautomatDriver {
                                         String formattedName = itemName;
 
                                         // Ensure the item name fits within the column
-                                        if (itemName.length() > 20) {
+                                        if (itemName.length() > 22) {
                                             formattedName =
-                                                itemName.substring(0, 17) +
+                                                itemName.substring(0, 19) +
                                                 "...";
                                         } else {
                                             // Pad with spaces to align columns
                                             formattedName = String.format(
-                                                "%-20s",
+                                                "%-22s",
                                                 itemName
                                             );
                                         }
