@@ -56,7 +56,7 @@ public class WarenautomatDriver {
                         (i + 1) +
                         " |"
                     );
-                }
+                }<
             }
 
             System.out.println();
