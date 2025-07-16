@@ -1,4 +1,3 @@
-import java.sql.Ref;
 import java.util.Scanner;
 
 public class WarenautomatDriver {
@@ -40,7 +39,7 @@ public class WarenautomatDriver {
                     if (artikel[i].length() < 20) {
                         int leer = 20 - artikel[i].length();
                         for (int j = 0; j < leer; j++) {
-                            artikel[i] = artikel[i] + " ";
+                            artikel[i] = artikel[i] + " "; 
                         }
                     }
                 }
